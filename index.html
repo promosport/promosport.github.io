@@ -2,6 +2,19 @@
 <html>
 <head>
 <style>
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -32,7 +45,27 @@ tr:nth-child(even) {
 </head>
 <body>
 <img width="120px" height="120px" src="https://play-lh.googleusercontent.com/IZQuWsKTrYeDF_wiEUvhyOjSR4Zqw2tIhzbWBZ2PUKTgzB-6s7fSFRhBCPOpUZCzZ5M"></img>
+
+<center>
+
+<button  style="    width: 128px;
+height: 36px;
+border-radius: 33px;
+color: #ecd7d7;
+font: initial;
+    font-style: initial;
+background-color: #090909;
+font-style: oblique;
+"  onclick="move()">Experts Tip</button>
+</br></br>
+<div style="display:none" id="myProgress">
+  <div id="myBar"></div>
+</div>
+<p id="price" style="display:none;color: green;
+font-size: larger;
+font-weight: bold;">Price: 67.250 DT</p></center>
 <center><h2 class="blink_me">Promsport</h2><center>
+
 <table> 
 <center>
   <tr>
@@ -40,10 +73,10 @@ tr:nth-child(even) {
     <th style="color:red">Bet</th>
     </tr>
   <tr>
-    <td>Juventus - Barcelone</td>
+    <td>Manchester United - Wolves</td>
     <td>
-	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<label  for="w1"> 1</label>
+	<input  type="checkbox" id="w1man" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
 	<input type="checkbox" id="w1" name="w1" value="w1">
@@ -54,170 +87,170 @@ tr:nth-child(even) {
      </td>
   </tr>
   <tr>
-    <td>Marseille  - Man City  </td>
+    <td>Brighton  - Arsenal  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1b" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1ba" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1bx" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Atalanta  - Ajax Amsterdam </td>
+    <td>Burnley  - Shieffield Utd </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1a" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1aa" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1aaa" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Krasnodar  - Chelsea  </td>
+    <td>Southhampton  - West Ham  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1z" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1zz" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1zzz" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Club Bruges  - Lazio  </td>
+    <td>West Bromwich  - Leeds United  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1west" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1wes" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1western" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Porto  - Olympiakos  </td>
+    <td>Newcastle  - Liverpool  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1newcastle" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1liverpool" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1newliver" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Borussia M Gladbach - Real Madrid  </td>
+    <td>Tottenham - Fulham   </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1to" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1fu" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1todu" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>FC Seville  - Rennes  </td>
+    <td>Elche  - Real Madrid  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1r" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1rr" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1rrr" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Shakhtar  - Inter Milan  </td>
+    <td>Granada  - Valencia </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1s" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1ss" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1sss" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Borussia Dortmund  - Z. St Petersbourg  </td>
+    <td>Celta Vigo  - SD Huesca  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1d" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1dd" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1ddd" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Atletico Madrid  - Salzburg  </td>
+    <td>Cadiz  - Real Valladolid  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1f" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1ff" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1fff" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Man United  - Leipzig  </td>
+    <td>Levante  - Real Betis  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1g" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1gg" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1ggg" name="w1" value="w1">
    
      </td>
   </tr>
   <tr>
-    <td>Lokomotiv Moscow - Bayern Munich  </td>
+    <td>Atletico Madrid - Getafe  </td>
     <td>
 	<label for="w1"> 1</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1c" name="w1" value="w1">
 	&nbsp;
     <label for="w1"> x</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1cc" name="w1" value="w1">
 	&nbsp;
      <label for="w1"> 2</label>
-	<input type="checkbox" id="w1" name="w1" value="w1">
+	<input type="checkbox" id="w1ccc" name="w1" value="w1">
    
      </td>
   </tr>
@@ -228,3 +261,54 @@ tr:nth-child(even) {
 
 </body>
 </html>
+<script type="text/javascript"> 
+
+
+var i = 0;
+function move() {
+document.getElementById("myProgress").style.display="block";
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 10;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+        getdone();
+		document.getElementById("myProgress").style.display="none";
+      } else {
+        width=width+0.5;
+        elem.style.width = width + "%";
+        elem.innerHTML = width  + "%";
+      }
+    }
+  }
+}
+
+function getdone(){
+document.getElementById("price").style.display="block";
+document.getElementById("w1man").checked="true";
+document.getElementById("w1b").checked="true";
+document.getElementById("w1ba").checked="true";
+document.getElementById("w1bx").checked="true";
+document.getElementById("w1a").checked="true";
+document.getElementById("w1aa").checked="true";
+document.getElementById("w1z").checked="true";
+document.getElementById("w1zzz").checked="true";
+document.getElementById("w1west").checked="true";
+document.getElementById("w1western").checked="true";
+document.getElementById("w1newcastle").checked="true";
+document.getElementById("w1to").checked="true";
+document.getElementById("w1rrr").checked="true";
+document.getElementById("w1ss").checked="true";
+document.getElementById("w1s").checked="true";
+document.getElementById("w1dd").checked="true";
+document.getElementById("w1d").checked="true";
+document.getElementById("w1c").checked="true";
+document.getElementById("w1g").checked="true";
+document.getElementById("w1gg").checked="true";
+document.getElementById("w1f").checked="true";
+document.getElementById("w1ff").checked="true";}
+</script>
